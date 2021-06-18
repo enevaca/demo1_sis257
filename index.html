@@ -4,14 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Demo SIS257</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <style>
+        body { background-color: rgba(0, 255, 128, 0.5) }
+        h2 {
+            text-align: center; 
+            background-color: hsla(180, 100%, 25%, 0.5);
+        }
+    </style> -->
 </head>
 <body>
-    <h1>HOLA SIS257...!!!</h1>
-    <h2></h2>
-    <div>
-        <p></p>
-        <input type="password" name="" id="">
-    </div>
+    <h1 style="color: tomato; font-family: Verdana;">Hola Mundo</h1>
+    <h2 id="h2Titulo"><i>título 2</i></h2>
+    <h3 class="claseH3">Título 3</h3>
+    <h6>título 6 <abbr title="Universidad de San Francisco Xavier">USFX</abbr></h6>
+    <p style="font-size: 10px;">Este es un párrafo <q>Cita algun texto</q></p>
+    <a href="https://usfx.bo" target="blank">Este es un enlace a la USFX</a>
+    <bdo dir="rtl">Texto escrito de derecha a izquierda</bdo>
+    <!-- Esto es un comentario -->
+    <br>
+    <img id="imgLinux" src="images/linux.png" alt="Logo Linux" width="70">
+    <button onclick="saludar()" class="btn btn-primary">Clic Aquí</button>
+    <ol class="claseH3">
+        <li>Fundamentos de la Programación</li>
+        <li>Desarrollo de Aplicaciones Int/Internet II</li>
+        <li>Ingeniería de Software</li>
+    </ol>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="undefined" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="undefined" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.esm.min.js" integrity="undefined" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Comentario de una sóla línea
+        /* Es es otro comentario
+           pero de varias líneas
+           */
+        var foo = true;
+        var auto = new Object();
+        auto.marca = "Toyota";
+        auto.año = 2019;
+        console.log(auto);
+        console.log(`La "suma" de '5' y '7' es ${sumar(5,7)}`);
+
+        var r = new Rectangulo(3, 5);
+        console.log('El área es: '+r.area());
+
+        document.getElementById('h2Titulo').innerHTML = 'Título 2';
+        document.getElementById('h2Titulo').style.color = 'red';
+        document.getElementById('imgLinux').alt = 'Logo de Linux';
+
+        if(true) console.log(true);
+        else console.log(false);
+        for(let i=0; i<5; i++) console.log('i: '+ i);
+
+        consultarJson();
+    </script>
 </body>
 </html>
